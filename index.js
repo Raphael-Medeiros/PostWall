@@ -1,16 +1,20 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
 var posts = [
-  { id: 0, title: "First post", description: "description of post" },
+  
 ];
+
 
 app.listen(PORT, () => {
   console.log("connected on ", PORT);
 });
+
+app.use(cors());
 
 app.use("/", express.static(path.join(__dirname, "client")));
 
@@ -19,6 +23,8 @@ app.get("/api/all", (req, res) => {
 });
 
 app.post("/api/new", bodyParser.json(), (req, res) => {
+  console.log(req.body);
+
   let title = req.body.title;
   let description = req.body.description;
 
@@ -26,5 +32,5 @@ app.post("/api/new", bodyParser.json(), (req, res) => {
 
   posts.push({ id, title, description });
 
-  res.send("");
+  res.send("Datas insert with sucess");
 });
