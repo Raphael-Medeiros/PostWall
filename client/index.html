@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Wall</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body onload="refreshPosts()">
+    <div class="container">
+      <h2>Post Wall</h2>
+      <div class="inputs">
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="description" placeholder="Description" />
+        <button onclick="addNewPost()">Enviar</button>
+      </div>
+      <h3>Posts</h3>
+      <div id="allPosts">
+        <div class="post">
+          <div class="postHead">New post</div>
+          <div class="postBody">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            commodi veniam!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

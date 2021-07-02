@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@100&display=swap");
+
+body {
+  background: #222;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #333;
+  color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
+  border-radius: 10px;
+  border: chartreuse solid 1px;
+}
+.inputs {
+  background-color: #555;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.inputs input {
+  border: chartreuse 1px solid;
+  color: chartreuse;
+  outline: none;
+  padding: 0.3rem;
+  background: none;
+}
+
+.inputs button {
+  padding: 0.3rem;
+  border: chartreuse solid 1px;
+  color: chartreuse;
+  background: none;
+}
+.post {
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+  border: 2px solid #222;
+}
+.post .postHead {
+  background: #222;
+  text-align: start;
+  padding: 0.3rem 1rem;
+}
+.post .postBody {
+  background: #444;
+  padding: 0.3rem 1rem;
+  color: #eee;
+  text-align: start;
+  font-size: 12px;
+}
